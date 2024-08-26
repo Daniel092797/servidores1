@@ -1,13 +1,12 @@
-{
+*{
     padding:0px;
     margin: 0px;
-
 }
+
 html{
 background-color: gray;
 
 }
-
 
 .contenedor-menu {
     height: 200px;
@@ -41,8 +40,7 @@ display: flex;
 }
 
 .contenedor-menu ul li a:hover{
-front size: 28px;
-color: yellow;
-background-color: blueviolet;
-
+    font-size: 28px;
+    color: yellow;
+    background-color: blueviolet;
 }
