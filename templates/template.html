@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+
+    <link rel="stylesheet" href="{{url_for('static',
+    filename='/css/cabecera-styles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',
+    filename='/css/pie-pagina-styles.css')}}">
+      <title>{% block title %} Template {% endblock %}</title>
 </head>
 <body>
     <header></header>
@@ -26,7 +31,11 @@
         </ul>
     </div>
 
-    <main></main>
-    <footer></footer>
+    <main>
+        {% block content %} {% endblock %}
+    </main>
+    <footer>
+        <h1>&COPY;Fabycam2204</h1>
+    </footer>
 </body>
 </html>
